@@ -1,0 +1,191 @@
+version: "1.0.0"
+generated_at: "2026-03-06"
+source: "docs/requirements/design-requirements.md"
+
+aesthetic:
+  direction: professional-clean
+  mood: trust-efficiency-intelligence
+  reference: "Notion + Ahrefs + Linear hybrid"
+  differentiation: "Data-first visualization x Intuitive content creation flow"
+
+colors:
+  primary: "#0f172a"
+  secondary: "#64748b"
+  accent:
+    marketing: "#2563eb"
+    beauty: "#e11d48"
+  success: "#059669"
+  warning: "#d97706"
+  error: "#dc2626"
+  background:
+    light: "#f8fafc"
+    dark: "#0f172a"
+  surface:
+    light: "#ffffff"
+    dark: "#1e293b"
+  border:
+    light: "#e2e8f0"
+    dark: "#334155"
+  text:
+    primary:
+      light: "#0f172a"
+      dark: "#f1f5f9"
+    secondary:
+      light: "#64748b"
+      dark: "#94a3b8"
+    muted:
+      light: "#94a3b8"
+      dark: "#64748b"
+
+typography:
+  heading:
+    family: "Noto Sans JP"
+    fallback: "Hiragino Kaku Gothic ProN, sans-serif"
+    weights: [600, 700]
+    sizes:
+      h1: "2rem"
+      h2: "1.5rem"
+      h3: "1.25rem"
+      h4: "1.125rem"
+    line_height: 1.4
+    letter_spacing: "-0.01em"
+  body:
+    family: "Noto Sans JP"
+    fallback: "Hiragino Kaku Gothic ProN, sans-serif"
+    weights: [400, 500]
+    sizes:
+      large: "1rem"
+      regular: "0.875rem"
+      small: "0.8125rem"
+      xs: "0.75rem"
+    line_height: 1.7
+  mono:
+    family: "JetBrains Mono"
+    fallback: "Menlo, monospace"
+    weights: [400, 500]
+    sizes:
+      regular: "0.875rem"
+      small: "0.8125rem"
+    usage: "data-values, keyword-display, seo-scores"
+
+spacing:
+  unit: "4px"
+  scale:
+    xs: "4px"
+    sm: "8px"
+    md: "16px"
+    lg: "24px"
+    xl: "32px"
+    2xl: "48px"
+    3xl: "64px"
+    4xl: "96px"
+
+borders:
+  radius:
+    none: "0"
+    sm: "4px"
+    md: "6px"
+    lg: "8px"
+    xl: "12px"
+    full: "9999px"
+  width:
+    thin: "1px"
+    medium: "2px"
+
+shadows:
+  sm: "0 1px 2px rgba(0, 0, 0, 0.04)"
+  md: "0 2px 8px rgba(0, 0, 0, 0.06)"
+  lg: "0 4px 16px rgba(0, 0, 0, 0.08)"
+
+components:
+  library: "shadcn/ui"
+  styling: "tailwind-v4"
+  animation: "motion/react"
+  icons: "lucide-react"
+  charts: "recharts"
+  editor: "tiptap"
+
+responsive:
+  desktop_first: true
+  breakpoints:
+    sm: "640px"
+    md: "768px"
+    lg: "1024px"
+    xl: "1280px"
+    2xl: "1536px"
+
+layout:
+  sidebar:
+    width: "240px"
+    collapsed_width: "64px"
+    collapsible: true
+  header:
+    height: "56px"
+    fixed: true
+  content:
+    max_width: "1280px"
+    padding: "24px"
+
+animation:
+  duration:
+    fast: "100ms"
+    normal: "200ms"
+    slow: "300ms"
+  easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+  properties_allowed:
+    - "transform"
+    - "opacity"
+  properties_forbidden:
+    - "width"
+    - "height"
+    - "margin"
+    - "padding"
+  blur_max: "8px"
+
+dark_mode:
+  strategy: "os-preference-with-toggle"
+  css_strategy: "class-based"
+
+blog_theme:
+  marketing:
+    accent: "#2563eb"
+    accent_hover: "#1d4ed8"
+    accent_light: "#eff6ff"
+    accent_dark: "#93c5fd"
+    badge_bg: "#dbeafe"
+    badge_text: "#1e40af"
+  beauty:
+    accent: "#e11d48"
+    accent_hover: "#be123c"
+    accent_light: "#fff1f2"
+    accent_dark: "#fda4af"
+    badge_bg: "#ffe4e6"
+    badge_text: "#9f1239"
+
+quality:
+  lighthouse:
+    performance: 90
+    accessibility: 100
+    best_practices: 100
+    seo: 100
+  core_web_vitals:
+    fcp: "1.8s"
+    lcp: "2.5s"
+    cls: "0.1"
+  wcag_level: "AA"
+  contrast_ratio: "4.5"
+  touch_target: "44px"
+
+anti_patterns:
+  fonts:
+    - "Inter"
+    - "Roboto"
+    - "Arial"
+  colors:
+    - "purple gradient on white"
+  effects:
+    - "excessive drop shadows"
+    - "glow effects"
+    - "page transition animations"
+  layout:
+    - "hero sections"
